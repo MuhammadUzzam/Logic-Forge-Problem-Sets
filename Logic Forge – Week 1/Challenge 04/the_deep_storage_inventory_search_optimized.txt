@@ -1,0 +1,11 @@
+Optimized Approach 
+
+1. Use the fact that the matrix rows and columns are sorted.
+2. Define a helper function count_before(mid) that counts how many elements are ≤ mid.
+3. Use binary search between the smallest (matrix[0][0]) and largest (matrix[n-1][n-1]) element:
+	-> If count of elements ≤ mid is less than k, search in the higher half.
+	-> Otherwise, search in the lower half.
+4. After binary search, low (or high) is the k-th smallest element.
+
+Time Complexity: O(n log(max-min))
+Space Complexity: O(1) extra space
