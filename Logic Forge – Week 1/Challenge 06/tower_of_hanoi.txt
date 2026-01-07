@@ -1,0 +1,12 @@
+Approach (Tower of Hanoi)
+
+1. The problem is to move N disks from the from_rod to the to_rod using an aux_rod (helper rod).
+2. Base case: If N is 0, do nothing.
+3. Recursive steps:
+	-> Move the top N-1 disks from from_rod to aux_rod using to_rod as auxiliary.
+	-> Move the N-th (largest) disk from from_rod to to_rod.
+	-> Move the N-1 disks from aux_rod to to_rod using from_rod as auxiliary.
+4. The recursion prints the moves for each disk, showing the correct sequence.
+
+Time Complexity: O(2^N) — exponential because each move generates two recursive calls
+Space Complexity: O(N) — due to recursion stack
