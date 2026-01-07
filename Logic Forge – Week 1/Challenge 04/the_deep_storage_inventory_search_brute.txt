@@ -1,0 +1,8 @@
+Brute Force Approach
+
+1. Read all elements of the matrix and store them in a single list.
+2. Sort the list.
+3. The k-th smallest element is at index k-1 of the sorted list.
+
+Time Complexity: O(n² log n²) = O(n² log n) due to sorting
+Space Complexity: O(n²)
