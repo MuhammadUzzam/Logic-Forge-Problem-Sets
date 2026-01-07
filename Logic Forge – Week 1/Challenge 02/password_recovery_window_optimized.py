@@ -7,7 +7,7 @@ for ch in pattern:
     else:
         hsh[ch]=1
 need=len(hsh)
-lo=0
+l=0
 mn=1e18
 ans=""
 for r in range(len(log)):
