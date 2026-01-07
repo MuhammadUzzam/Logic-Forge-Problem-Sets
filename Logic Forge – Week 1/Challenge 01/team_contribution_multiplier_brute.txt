@@ -1,0 +1,13 @@
+Approach (Brute Force):
+
+We want to find the product of all elements of the array except the current one.
+
+For each index i:
+- Start with a value temp = 1
+- Loop over the entire array again
+- Multiply all elements except when the index is i
+- Store the result in the impact array
+
+This method uses two loops, so for every element we scan the full array.
+Time Complexity: O(n^2)
+Space Complexity: O(n)
