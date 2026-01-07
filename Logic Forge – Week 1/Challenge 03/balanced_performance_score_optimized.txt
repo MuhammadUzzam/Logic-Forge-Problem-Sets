@@ -1,0 +1,10 @@
+Optimized Approach (Balanced Performance Score)
+
+1. Use two pointers to traverse both sorted lists (scoresA and scoresB) simultaneously.
+2. Keep track of the current and previous numbers while merging up to the middle position.
+3. Stop as soon as we reach the median position:
+4. If total elements are odd, median is the current number.
+5. If even, median is average of current and previous numbers.
+
+Time Complexity: O(n+m)
+Space Complexity: O(1) extra space
