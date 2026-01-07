@@ -1,0 +1,14 @@
+Brute Force Approach (Remove Invalid Parentheses / Longest Valid Substrings)
+
+1. Generate all possible subsets of indices of the string s.
+2. For each subset, check if it forms a valid parentheses sequence:
+ 	-> Use a stack to match opening '(' and closing ')'.
+	-> If stack is empty at the end, the subset is valid.
+3. Track the maximum length of valid subsets.
+4. Collect all subsets that are valid and have this maximum length.
+5. Convert the index subsets back to strings and remove duplicates using a set.
+6. Print the set of all longest valid parentheses strings.
+
+Time Complexity: O(2ⁿ × n) — because we check all subsets of length n
+Space Complexity: O(2ⁿ × n) — to store all subsets
+
