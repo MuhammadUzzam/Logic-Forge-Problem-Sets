@@ -1,0 +1,19 @@
+Approach (Optimized using Prefix and Suffix):
+
+We avoid repeated multiplication by using prefix and suffix arrays.
+
+Prefix array:
+- pref[i] stores the product of all elements before index i
+
+Suffix array:
+- suff[i] stores the product of all elements after index i
+
+Steps:
+1. Build the prefix array from left to right
+2. Build the suffix array from right to left
+3. For each index i, multiply pref[i] and suff[i]
+   This gives the product of all elements except contributions[i]
+
+This method uses only linear passes.
+Time Complexity: O(n)
+Space Complexity: O(n)
