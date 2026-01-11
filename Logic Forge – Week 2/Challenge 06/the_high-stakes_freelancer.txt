@@ -1,0 +1,14 @@
+Approach (Greedy)
+Pair each job as [profit, deadline].
+Sort jobs in descending order of profit.
+Keep track of:
+cur = current day
+prof = total profit
+For each job:
+If its deadline <= cur → cannot do, skip
+Else → do it, add profit, increment cur
+Return [number of jobs done, total profit].
+
+Complexity
+Time: O(n log n) (sorting)
+Space: O(n) (job list)

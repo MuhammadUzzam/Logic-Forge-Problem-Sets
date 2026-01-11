@@ -1,0 +1,10 @@
+Brute Force Approach
+Try all possible ways to make total_sum.
+For each coin:
+Use it 0 times, 1 time, 2 times, …
+Reduce sum and move to previous coin.
+Count all valid ways.
+No memoization, so many repeated calls.
+
+Time: Exponential
+Space: Recursion stack

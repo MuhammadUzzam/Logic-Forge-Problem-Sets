@@ -1,0 +1,9 @@
+Brute Force Explanation
+Reverse the string.
+Find LCS using pure recursion.
+At each step, try all possibilities.
+No DP → same states repeat.
+That’s why it’s brute force.
+
+Time: Exponential
+Space: Recursive stack only

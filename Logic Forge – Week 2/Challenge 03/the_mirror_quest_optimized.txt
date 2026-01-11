@@ -1,0 +1,13 @@
+Optimized Idea
+A palindrome is same forward and backward.
+Reverse the string.
+Find LCS(original, reversed).
+That LCS length = Longest Palindromic Subsequence.
+
+How DP Works
+func(n, m) = LCS of first n and m characters.
+If characters match → 1 + func(n-1, m-1)
+Else → max of skipping one character.
+dp saves results to avoid recomputation.
+Time: O(n²)
+Space: O(n²)

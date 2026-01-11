@@ -1,0 +1,10 @@
+Brute Solution (Generate All Subsets)
+We generate all possible subsets of the array.
+For every subset, we check its sum.
+If any subset has sum = total_sum / 2, we return True.
+If total sum is odd, equal partition is not possible.
+
+Why slow?
+Number of subsets = 2^n, so it becomes very slow for large arrays.
+Time Complexity: O(2^n)
+Space Complexity: O(2^n)

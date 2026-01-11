@@ -1,0 +1,3 @@
+I'm not quite sure about its brute force solution so I apply Greedy 
+solution for it which always gives optimal answer under given 
+constraints

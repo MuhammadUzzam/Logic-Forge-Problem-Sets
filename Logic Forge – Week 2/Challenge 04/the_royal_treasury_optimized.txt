@@ -1,0 +1,9 @@
+Optimized Approach (DP)
+dp[i][j] = number of ways to make sum j using first i coins.
+Two choices:
+Don’t use current coin → dp[i-1][j]
+Use current coin → dp[i][j - coin]
+Build table bottom-up.
+
+Time: O(n × total_sum)
+Space: O(n × total_sum)

@@ -1,0 +1,14 @@
+Optimized Solution (Dynamic Programming)
+First check if total sum is even.
+Target becomes total_sum / 2.
+dp[i][j] means:
+Using first i elements, can we make sum j?
+Two choices for each element:
+Include it
+Exclude it
+Final answer is stored in dp[n][target].
+
+Why fast?
+Each state is calculated only once.
+Time Complexity: O(n × sum)
+Space Complexity: O(n × sum)

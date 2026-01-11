@@ -1,0 +1,11 @@
+Approach (Greedy)
+Sort intervals by end time.
+Keep track of en of last selected booking.
+For each booking:
+If start ≥ end → no overlap, select it, update end.
+Else → overlap, cancel this booking, increment res.
+res = minimum bookings to cancel.
+
+Complexity
+Time: O(n log n) (sorting)
+Space: O(n) (for input list)

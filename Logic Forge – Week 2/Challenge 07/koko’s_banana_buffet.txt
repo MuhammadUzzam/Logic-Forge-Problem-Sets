@@ -1,0 +1,14 @@
+Approach (Binary Search)
+Search space: lo = 1, hi = max(piles)
+Check function func(x):
+Compute hours needed with speed x:
+hours = sum(ceil(pile / x) for pile in piles)
+If hours <= k → speed x works.
+Binary search:
+If func(mid) is True → try smaller speed (hi = mid - 1)
+Else → need larger speed (lo = mid + 1)
+Keep track of minimum valid speed in res.
+
+Complexity
+Time: O(n log m) where m = max(piles)
+Space: O(1) (only a few variables)
